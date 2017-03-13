@@ -1,6 +1,7 @@
 ﻿namespace roundhouse.tasks
 {
     using System;
+    using System.Collections.Generic;
     using databases;
     using folders;
     using infrastructure.app;
@@ -183,6 +184,8 @@
         public bool DisableOutput { get; set; }
 
         public bool Initialize { get; set; }
+
+        public Dictionary<string, string> UserTokens { get; set; }
 
         #endregion
 
