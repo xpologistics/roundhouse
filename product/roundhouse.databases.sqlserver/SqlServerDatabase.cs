@@ -95,7 +95,7 @@ namespace roundhouse.databases.sqlserver
                 @"
                     IF NOT EXISTS(SELECT * FROM sys.schemas WHERE [name] = '{0}')
                       BEGIN
-	                    EXEC('CREATE SCHEMA [{0}]')
+                        EXEC('CREATE SCHEMA [{0}]')
                       END
                 "
                 , roundhouse_schema_name);
